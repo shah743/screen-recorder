@@ -29,8 +29,5 @@ addons:
     packages:
       - ffmpeg
 
-before_install:
-  - gem update --system --no-document
-
 before_script:
   - nohup Xvfb :0 -screen 0 1024x768x24 &
