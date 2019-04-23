@@ -44,3 +44,20 @@ def os_specific_input
     raise NotImplementedError, 'Your OS is not supported.'
   end
 end
+
+def output_file
+  'recording.mkv'
+end
+
+def log_file
+  'screen-recorder.log'
+end
+
+def advanced_params
+  {
+    framerate: 30.0,
+    loglevel:  'level+debug', # For FFmpeg
+    video_size:  '640x480',
+    show_region: '1'
+  }
+end
